@@ -1,0 +1,63 @@
+a {
+    text-decoration: none;
+}
+
+.images_style {
+    width: 400px;
+    height: 300px;
+    border-radius: 30%;
+}
+
+.menu_link_styles {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.my_class_h1 {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.my_class_p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.my_class_h2 {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.my_input_class {
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.my_button_class {
+    /* width: 100px;
+    height: 30px; */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: rgb(95, 142, 200);
+    cursor: pointer;
+}
+
+.my_button_class:hover {
+    background-color: rgb(212, 230, 123);
+}
