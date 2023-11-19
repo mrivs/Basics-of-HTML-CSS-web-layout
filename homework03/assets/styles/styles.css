@@ -1,0 +1,179 @@
+@font-face {
+    font-family: "gilroy-regular";
+    src: url("../fonts/gilroy-regular.ttf");
+
+}
+
+@font-face {
+    font-family: "gilroy-medium";
+    src: url("../fonts/gilroy-medium.ttf");
+
+}
+
+@font-face {
+    font-family: "gilroy-semibold";
+    src: url("../fonts/gilroy-semibold.ttf");
+
+}
+
+@font-face {
+    font-family: "gilroy-bold";
+    src: url("../fonts/gilroy-bold.ttf");
+
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background: #FFF;
+}
+
+ul {
+    padding: 0;
+}
+
+.header {
+
+    display: flex;
+    justify-content: flex-start;
+    margin-inline-start: 375px;
+    align-items: center;
+    background-color: #FFF;
+    color: rgb(0, 0, 0);
+    gap: 500px;
+    height: 120px;
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 40px;
+}
+
+.menu-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 14px;
+}
+
+.logo-upper {
+    width: 35px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+/* .menu  a {
+
+} */
+.menu-item-first {
+    color: #F25822;
+    font-family: "gilroy-semibold";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+}
+.menu-item {
+
+    color: #000;
+    font-family: "gilroy-medium";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.intro {
+    display: flex;
+    justify-content: flex-start;
+    margin-inline-start: 373px;
+    gap: 40px;
+    margin-top: 90px;
+    align-items: flex-start;
+    
+}
+
+.intro-left {
+    width: 589px;
+    height: 494px;
+
+}
+
+
+.intro-title {
+    color: #000;
+    font-family: "gilroy-bold";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+
+.intro-text {
+    color: #888;
+    font-family: "gilroy-medium";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 37px;
+}
+
+.intro-button-wrapper {
+
+    display: flex;
+    gap: 72px;
+    align-items: center;
+
+}
+
+.intro-button {
+    display: inline-flex;
+    padding: 15px 30px;
+    align-items: flex-start;
+    border: none;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    color: #FFF;
+    font-family: "gilroy-bold";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.intro-button-right {
+    display: inline-flex;
+    align-items: flex-start;
+    color: #AAA;
+    font-family: "gilroy-bold";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-start;
+    margin-inline-start: 373px;
+    align-items: center;
+    height: 243px;
+    list-style: none;
+    gap: 48px;
+}
