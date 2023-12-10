@@ -259,7 +259,7 @@ html {
 
 }
 
-.item-head {
+.products-item-head {
     color: #000;
     font-family: "Lato";
     font-size: 13px;
@@ -268,7 +268,7 @@ html {
     line-height: normal;
 }
 
-.item-text {
+.products-item-text {
     color: #5D5D5D;
     font-family: "Lato";
     font-size: 14px;
@@ -277,7 +277,7 @@ html {
     line-height: normal;
 }
 
-.item-price {
+.products-item-price {
     color: #F16D7F;
     font-family: "Lato";
     font-size: 16px;
