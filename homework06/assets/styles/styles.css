@@ -1,13 +1,19 @@
-@font-face {
+/* @font-face {
     font-family: "gilroy-regular";
     src: url("../fonts/gilroy-regular.ttf");
 
+} */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
 }
 
 * {
     margin: 0;
 }
-.header{
+
+.header {
     background-color: #222;
     width: 100%;
     height: 75px;
@@ -18,24 +24,277 @@
     align-items: center;
 }
 
-.header-wrapper{
+.header-box {
     width: 1140px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header-left{
+
+.header-left {
     gap: 41px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     height: 38px;
-    
 }
-.header-right{
+
+.header-right {
     gap: 41px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.intro {
+    width: 100%;
+    height: 764px;
+    flex-shrink: 0;
+    background-color: #F1E4E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-box {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro-left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.intro-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    width: 405px;
+    height: 93px;
+}
+
+.intro-text-wrapper {
+    width: 377px;
+    height: 93px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.intro-text-head {
+    color: #222;
+    font-family: "Lato";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.intro-text {
+    color: #222;
+    font-family: "Lato";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.offers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+
+.offers-box {
+    width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 260px 180px;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    justify-content: center;
+
+}
+
+.offer-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 260px;
+    width: 360px;
+}
+
+.offer-item-low {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 180px;
+    width: 1140px;
+}
+
+.image-filter {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 22, 22, 0.70);
+
+}
+
+.offer-text-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+.offer_upper_text {
+    color: #FFF;
+    text-align: center;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.offer_lower_text {
+    color: #F16D7F;
+    font-family: "Lato";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.products-caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products-caption-text {
+    color: #222;
+    font-family: "Lato";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.products-caption-subtitle {
+    color: #9F9F9F;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.products-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 580px;
+    grid-column-gap: 30px;
+    grid-row-gap: 25px;
+    justify-content: center;
+    width: 1140px;
+}
+
+.products-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 360px;
+    height: 580px;
+    flex-shrink: 0;
+}
+
+.products-image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7E4E2;
+    height: 420px;
+
+}
+
+.products-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #F8F8F8;
+    height: 112px;
+    padding: 24px 28px 24px 16px;
+
+
+}
+
+.item-head {
+    color: #000;
+    font-family: "Lato";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.item-text {
+    color: #5D5D5D;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.item-price {
+    color: #F16D7F;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.products-button {
+    color: #F26376;
+    font-family: "Lato";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 30px 14px 39px ;
+    background-color: white;
+    border: 1px solid #FF6A6A;
     
 }
