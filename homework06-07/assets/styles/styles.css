@@ -67,6 +67,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+
 }
 
 .intro-right {
@@ -293,8 +294,91 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding: 15px 30px 14px 39px ;
+    padding: 15px 30px 14px 39px;
     background-color: white;
     border: 1px solid #FF6A6A;
-    
+
 }
+
+@media screen and (max-width: 1439px) {
+    .header {
+        min-width: 100%;
+
+    }
+
+    .header-box {
+        width: 736px;
+        padding-left: 32px;
+        padding-right: 41px;
+    }
+
+    .header-cart {
+        padding-left: 17px;
+    }
+
+    .intro {
+        width: 100%;
+        height: 383px;
+
+    }
+
+    .intro-box {
+        width: 736px;
+        padding-left: 32px;
+        padding-right: 41px;
+    }
+
+    .intro-man {
+        height: 383px;
+    }
+
+    .intro-right {
+        gap: 16px;
+        width: 311px;
+        height: 93px;
+    }
+
+    .intro-text-wrapper {
+        width: 283px;
+        height: 78px;
+    }
+
+    .intro-text-head {
+        font-size: 44px;
+    }
+
+    .intro-text {
+        font-size: 24px;
+    }
+
+    .offers {
+        margin-bottom: 110px;
+    }
+
+    .offers-box {
+        width: 736px;
+        grid-template-rows: 168px 116px;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+
+    .offer-item {
+        height: 168px;
+        width: 232px;
+    }
+
+    .offer-item-low {
+        height: 116px;
+        width: 736px;
+    }
+
+    .products-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 580px;
+        grid-column-gap: 16px;
+        grid-row-gap: 17px;
+        width: 736px;
+    }
+}
+
