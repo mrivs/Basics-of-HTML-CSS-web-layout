@@ -11,6 +11,11 @@ html {
 
 * {
     margin: 0;
+    padding: 0;
+}
+
+.cur-po {
+    cursor: pointer;
 }
 
 .header {
@@ -45,6 +50,76 @@ html {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
+.header-menu {
+
+    display: none;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    position: fixed;
+    top: 75px;
+    right: 0px;
+    width: 232px;
+    height: 634px;
+    z-index: 2;
+    background-color: #FFF;
+}
+
+.header-right__menu:hover ~ .header-menu{
+    display: flex;
+   
+} 
+
+.header-menu__title {
+    margin-top: 33px;
+    margin-left: 32px;
+    margin-bottom: 21px;
+    color: #000;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header-main-list {
+    list-style-type: none;
+    margin-left: 32px;
+    
+    
+}
+
+.header-sub-list {
+    list-style-type: none;
+    margin-left: 21.5px;
+    margin-bottom: 11px;
+}
+
+.header-main-list__text {
+    color: #F16D7F;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 12px;
+
+}
+
+.header-sub-list__text {
+    color: #6F6E6E;
+    font-family: "Lato";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 11px;
+}
+
+
 
 .intro {
     width: 100%;
@@ -239,13 +314,51 @@ html {
     flex-shrink: 0;
 }
 
+
+
+
 .products-image-wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F7E4E2;
     height: 420px;
 
+}
+
+.products-image-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 56, 56, 0.86);
+    display: none;
+}
+
+.products-image-wrapper:hover::after {
+    display: flex;
+}
+
+.products-image-wrapper__button {
+    display: none;
+    width: 139px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    border: 2px solid white;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.0);
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.products-image-wrapper:hover .products-image-wrapper__button {
+    display: flex;
 }
 
 .products-text-wrapper {
@@ -358,11 +471,11 @@ html {
     align-items: center;
 }
 
-.subscribe__container {
+.subscribe-container {
     display: flex;
     justify-content: center;
     position: relative;
-
+    overflow: hidden;
     height: 448px;
     width: 1600px;
 
@@ -388,7 +501,7 @@ html {
 
 
 
-.subscribe-container__box {
+.subscribe-container-box {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -480,6 +593,7 @@ html {
     border-bottom-left-radius: 24px;
     padding-left: 22px;
     border: none;
+
 }
 
 .subscribe-container-form__button {
@@ -513,7 +627,7 @@ html {
 
 }
 
-.footer__box {
+.footer-box {
     width: 1140px;
     height: 79px;
     display: flex;
@@ -534,7 +648,6 @@ html {
     width: 147.664px;
     height: 32px;
     flex-shrink: 0;
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -550,6 +663,14 @@ html {
     background-color: white;
 }
 
+.footer-box__icon-wrapper:hover {
+    background-color: #F16D7F;
+}
+
+.footer-box__icon-wrapper:hover .footer-box__icon {
+    filter: invert(100%);
+
+}
 
 
 
@@ -655,10 +776,10 @@ html {
         height: 614px;
     }
 
-    .subscribe__container {
+    .subscribe-container {
         display: flex;
         justify-content: center;
-        overflow: hidden;
+
         height: 614px;
         width: 768px;
     }
@@ -669,7 +790,7 @@ html {
         object-fit: cover
     }
 
-    .subscribe-container__box {
+    .subscribe-container-box {
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -689,7 +810,7 @@ html {
 
 
 
-    .footer__box {
+    .footer-box {
         width: 768px;
     }
 
@@ -812,7 +933,7 @@ html {
 
     }
 
-    .subscribe__container {
+    .subscribe-container {
         height: 550px;
         max-width: 610px;
         width: 100%;
@@ -825,7 +946,7 @@ html {
 
     }
 
-    .subscribe-container__box {
+    .subscribe-container-box {
         max-width: 610px;
         width: 100%;
         height: 550px;
@@ -837,7 +958,7 @@ html {
         height: 143px;
     }
 
-    .footer__box {
+    .footer-box {
         flex-direction: column-reverse;
         justify-content: flex-start;
         height: 143px;

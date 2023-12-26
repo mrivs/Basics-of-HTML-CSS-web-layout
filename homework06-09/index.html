@@ -14,14 +14,47 @@
         <div class="header-box">
             <div class="header-left">
                 <img src="./assets/images/logo.svg">
-                <img src="./assets/images/label_search.svg">
+                <img class="cur-po" src="./assets/images/label_search.svg">
             </div>
             <div class="header-right">
-                <img src="./assets/images/label_list.svg">
-                <img class="header-right__man" src="./assets/images/label_man.svg">
-                <img class="header-cart" src="./assets/images/label_cart.svg">
+                <img class="header-right__menu cur-po" src="./assets/images/label_list.svg">
+                <img class="header-right__man cur-po" src="./assets/images/label_man.svg">
+                <img class="header-cart cur-po" src="./assets/images/label_cart.svg">
+
+                <div class="header-menu">
+                    <h2 class="header-menu__title">MENU</h2>
+                    <ul class="header-main-list">
+                        <li class="header-main-list__text">MAN</li>
+                        <ul class="header-sub-list">
+                            <li class="header-sub-list__text">Accessories</li>
+                            <li class="header-sub-list__text">Bags</li>
+                            <li class="header-sub-list__text">Denim</li>
+                            <li class="header-sub-list__text">T-Shirts</li>
+                        </ul>
+                        <li class="header-main-list__text">WOMAN</li>
+                        <ul class="header-sub-list">
+                            <li class="header-sub-list__text">Accessories</li>
+                            <li class="header-sub-list__text">Jackets & Coats</li>
+                            <li class="header-sub-list__text">Polos</li>
+                            <li class="header-sub-list__text">T-Shirts</li>
+                            <li class="header-sub-list__text">Shirts</li>
+                        </ul>
+                        <li class="header-main-list__text">KIDS</li>
+                        <ul class="header-sub-list">
+                            <li class="header-sub-list__text">Accessories</li>
+                            <li class="header-sub-list__text">Jackets & Coats</li>
+                            <li class="header-sub-list__text">Polos</li>
+                            <li class="header-sub-list__text">T-Shirts</li>
+                            <li class="header-sub-list__text">Shirts</li>
+                            <li class="header-sub-list__text">Bags</li>
+                        </ul>
+
+                    </ul>
+                </div>
             </div>
         </div>
+
+
 
     </header>
     <section class="intro">
@@ -87,8 +120,14 @@
         <div class="products-box">
             <div class="products-item">
                 <div class="products-image-wrapper">
+                    <button class="products-image-wrapper__button">
+                        <img src="./assets/images/prod_cart.svg">
+                        Add to Cart
+                    </button>
                     <img src="./assets/images/item-1.png">
                 </div>
+
+
                 <div class="products-text-wrapper">
                     <h2 class="products-item-head">ELLERY X M'O CAPSULE</h2>
                     <p class="products-item-text">Known for her sculptural takes on traditional tailoring, Australian
@@ -99,6 +138,10 @@
             </div>
             <div class="products-item">
                 <div class="products-image-wrapper">
+                    <button class="products-image-wrapper__button">
+                        <img src="./assets/images/prod_cart.svg">
+                        Add to Cart
+                    </button>
                     <img src="./assets/images/item-2.png">
                 </div>
                 <div class="products-text-wrapper">
@@ -111,6 +154,10 @@
             </div>
             <div class="products-item">
                 <div class="products-image-wrapper">
+                    <button class="products-image-wrapper__button">
+                        <img src="./assets/images/prod_cart.svg">
+                        Add to Cart
+                    </button>
                     <img src="./assets/images/item-3.png">
                 </div>
                 <div class="products-text-wrapper">
@@ -123,6 +170,10 @@
             </div>
             <div class="products-item">
                 <div class="products-image-wrapper">
+                    <button class="products-image-wrapper__button">
+                        <img src="./assets/images/prod_cart.svg">
+                        Add to Cart
+                    </button>
                     <img src="./assets/images/item-4.png">
                 </div>
                 <div class="products-text-wrapper">
@@ -135,6 +186,10 @@
             </div>
             <div class="products-item">
                 <div class="products-image-wrapper">
+                    <button class="products-image-wrapper__button">
+                        <img src="./assets/images/prod_cart.svg">
+                        Add to Cart
+                    </button>
                     <img src="./assets/images/item-5.png">
                 </div>
                 <div class="products-text-wrapper">
@@ -147,6 +202,10 @@
             </div>
             <div class="products-item">
                 <div class="products-image-wrapper">
+                    <button class="products-image-wrapper__button">
+                        <img src="./assets/images/prod_cart.svg">
+                        Add to Cart
+                    </button>
                     <img src="./assets/images/item-6.png">
                 </div>
                 <div class="products-text-wrapper">
@@ -193,14 +252,15 @@
 
     </section>
     <section class="subscribe">
-        <div class="subscribe__container">
+        <div class="subscribe-container">
             <img class="subscribe-container__image" src="./assets/images/subscribe_back.png">
             <div class="subscribe-container__filter"></div>
 
-            <div class="subscribe-container__box">
+            <div class="subscribe-container-box">
                 <div class="subscribe-container-box__left">
                     <img src="./assets/images/subscr_face.png">
-                    <p class="subscribe-container-box-left__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    <p class="subscribe-container-box-left__text">“Vestibulum quis porttitor dui! Quisque viverra nunc
+                        mi,
                         <span style="font-style: italic"> a pulvinar purus condimentum</span>“
                     </p>
                 </div>
@@ -219,22 +279,22 @@
     </section>
 
     <footer class="footer">
-        <div class="footer__box">
+        <div class="footer-box">
             <p class="footer-box__left-text">
                 © 2022 Brand All Rights Reserved.
             </p>
             <div class="footer-box__right">
                 <div class="footer-box__icon-wrapper">
-                    <img src="./assets/images/facebook-brands.svg">
+                    <img class="footer-box__icon" src="./assets/images/facebook-brands.svg">
                 </div>
                 <div class="footer-box__icon-wrapper">
-                    <img src="./assets/images/instagram-brands.svg">
+                    <img class="footer-box__icon" src="./assets/images/instagram-brands.svg">
                 </div>
                 <div class="footer-box__icon-wrapper">
-                    <img src="./assets/images/pinterest-brands.svg">
+                    <img class="footer-box__icon" src="./assets/images/pinterest-brands.svg">
                 </div>
                 <div class="footer-box__icon-wrapper">
-                    <img src="./assets/images/twitter-brands.svg">
+                    <img class="footer-box__icon" src="./assets/images/twitter-brands.svg">
                 </div>
             </div>
         </div>
