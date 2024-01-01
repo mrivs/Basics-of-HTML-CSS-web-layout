@@ -51,6 +51,34 @@ html {
     align-items: center;
 }
 
+.header-right__cart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.header-right__cart::before{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+	height: 20px;
+
+    content: '5';
+    color: #FFF;
+    font-family: "Lato";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+	background:  #F16D7F;
+	border-radius: 10px;
+    z-index: 1;
+    bottom: 18px;
+    left: 22px;
+}
+
 
 
 .header-menu {
@@ -787,7 +815,7 @@ html {
         justify-content: center;
 
         height: 614px;
-        width: 768px;
+        width: 100%
     }
 
     .subscribe-container__image {
@@ -801,7 +829,7 @@ html {
         justify-content: flex-start;
         align-items: center;
         height: 614px;
-        width: 768px;
+        width: 100%;
         left: 0px;
 
     }
@@ -941,8 +969,7 @@ html {
 
     .subscribe-container {
         height: 550px;
-        max-width: 610px;
-        width: 100%;
+
 
     }
 
@@ -953,8 +980,6 @@ html {
     }
 
     .subscribe-container-box {
-        max-width: 610px;
-        width: 100%;
         height: 550px;
         left: 0px;
 
